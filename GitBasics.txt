@@ -1,0 +1,42 @@
+Git and Github bootcamp Day - 1 - Getting started with git terminal and basic commands
+
+1) To check whether git is installed in your systems or not and its version -:
+	git --version
+	
+2) Configuring your username and email-:
+	git config --global user.name "your_username"
+	git config --global user.email "your_email"
+	
+3) Fork the repository
+
+4) Creating a directory, moving to that working directory and using basic commands like mkdir, cd, pwd etc.
+
+5) Cloning the repository-:
+	git clone https://github.com/username/repository.git
+	
+6) Creating a branch-:
+	git branch name_of_branch
+	
+7) Checking the branches present-:
+	git branch
+
+8) Moving onto the branch for working-:
+	git checkout name_of_branch
+	
+9) Do the modifications to the project and do things that you want to accomplish, then check the status of work by the following command-:
+	git status
+	
+10) Now we'll move onto the staging area, it's basically an intermediate stage that tells Git that we want to include updates to a particular file in the next commit, but it doesn't affect the repository until we commit-:
+	git add -A
+	
+11) Now we'll check the status once more to see the changes-:
+	git status
+	
+12) Now we'll commit our changes to our repository-:
+	git commit -m "message"
+	
+13) Now final check of the changes we made to our repository before we push the changes to the master repository-:
+	git push origin new-branch
+
+Note - To push your hanges directly into the master branch we write the command-:
+	git push origin -u master
